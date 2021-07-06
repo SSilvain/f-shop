@@ -1,27 +1,103 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300);
+@font-face {
+  font-family: "gilroy";
+  font-display: swap;
+  src: url("../fonts/gilroy-bold.woff") format("woff"), url("../fonts/gilroy-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: "aBigDeal";
+  font-family: "gilroy";
   font-display: swap;
-  src: url("../fonts/aBigDeal.woff") format("woff"), url("../fonts/aBigDeal.woff2") format("woff2");
+  src: url("../fonts/gilroy-medium.woff") format("woff"), url("../fonts/gilroy-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroy";
+  font-display: swap;
+  src: url("../fonts/gilroy-regular.woff") format("woff"), url("../fonts/gilroy-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Eternal Amsterdam";
+  font-family: "gilroy";
   font-display: swap;
-  src: url("../fonts/Eternal Amsterdam Italic.woff") format("woff"), url("../fonts/Eternal Amsterdam Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
+  src: url("../fonts/gilroy-semibold.woff") format("woff"), url("../fonts/gilroy-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Eternal Amsterdam";
+  font-family: "icons";
   font-display: swap;
-  src: url("../fonts/Eternal Amsterdam.woff") format("woff"), url("../fonts/Eternal Amsterdam.woff2") format("woff2");
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]:before,
+[class^=" _icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"]:before,
+[class^=" _icon-"]:before {
+  display: block;
+}
+
+._icon-arrow-down:before {
+  content: "\e900";
+}
+
+._icon-arrow-link:before {
+  content: "\e901";
+}
+
+._icon-cart:before {
+  content: "\e902";
+}
+
+._icon-favorite:before {
+  content: "\e903";
+}
+
+._icon-location:before {
+  content: "\e904";
+}
+
+._icon-phone:before {
+  content: "\e905";
+}
+
+._icon-search:before {
+  content: "\e906";
+}
+
+._icon-send:before {
+  content: "\e907";
+}
+
+._icon-share:before {
+  content: "\e908";
 }
 
 * {
