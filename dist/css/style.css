@@ -48,7 +48,7 @@
 }
 
 [class^="_icon-"]:before,
-[class^=" _icon-"]:before {
+[class*=" _icon-"]:before {
   font-family: "icons";
   font-style: normal;
   font-weight: normal;
@@ -60,7 +60,7 @@
 }
 
 [class^="_icon-"]:before,
-[class^=" _icon-"]:before {
+[class*=" _icon-"]:before {
   display: block;
 }
 
@@ -105,44 +105,7 @@
   box-sizing: border-box;
 }
 
-.block {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-bottom: 0;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  overflow: hidden;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-size: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: green;
-  border: 2px solid blue;
-  padding: 1px;
-  -ms-flex-line-pack: center;
-  align-content: center;
-}
-
-.block .block__in {
-  width: 15%;
-  height: 150px;
-  display: block;
-  margin-bottom: 20px;
-  background-color: yellow;
-  border: 1px solid black;
-  -webkit-box-ordinal-group: 6;
-  -ms-flex-order: 5;
-  order: 5;
-  -webkit-box-flex: 3;
-  -ms-flex-positive: 3;
-  flex-grow: 3;
-}
-
-.bottom {
-  background-color: pink;
+body {
+  font-family: "gilroy";
+  font-size: 16px;
 }

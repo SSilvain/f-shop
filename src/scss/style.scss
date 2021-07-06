@@ -11,7 +11,7 @@
 
 @import "fonts";
 
-@import "icons.scss";
+@import "icons";
 
 $fontFamily: "gilroy";
 $fontSize: 16;
@@ -21,29 +21,7 @@ $fontSize: 16;
     box-sizing: border-box;
 }
 
-.block {
-    flex-direction: row;
-    margin-bottom: 0;
-    justify-content: space-between;
-    overflow: hidden;
-    flex-wrap: wrap;
-    font-size: 50px;
-    display: flex;
-    background-color: green;
-    border: 2px solid blue;
-    padding: 1px;
-    align-content: center;
-    .block__in {
-        width: 15%;
-        height: 150px;
-        display: block;
-        margin-bottom: 20px;
-        background-color: yellow;
-        border: 1px solid black;
-        order: 5;
-        flex-grow: 3;
-    }
-}
-.bottom {
-    background-color: pink;
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize + px;
 }
