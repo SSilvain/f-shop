@@ -14,7 +14,7 @@ let path = {
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css: source_folder + "/scss/style.scss",
-        js: source_folder + "/js/script.js",
+        js: source_folder + "/js/app.js",
         img: source_folder + "/img/**/*.{jpg,jpeg,png,svg,webp,gif,ico}",
         fonts: source_folder + "/fonts/*.ttf",
     },
@@ -27,10 +27,7 @@ let path = {
     clean: "./" + project_folder + "/",
 };
 
-let {
-    src,
-    dest
-} = require("gulp"),
+let { src, dest } = require("gulp"),
     gulp = require("gulp"),
     browsersync = require("browser-sync").create(),
     fileinclude = require("gulp-file-include"),
@@ -80,9 +77,11 @@ function images() {
         .pipe(
             imagemin({
                 progressive: true,
-                svgoPlugins: [{
-                    removeViewBox: false
-                }],
+                svgoPlugins: [
+                    {
+                        removeViewBox: false,
+                    },
+                ],
                 interlaced: true,
                 optimizationLevel: 3, // 0 to 7
             })
@@ -161,10 +160,10 @@ function fontsStyle(params) {
                         fs.appendFile(
                             source_folder + "/scss/fonts.scss",
                             '@include font("' +
-                            fontname +
-                            '", "' +
-                            fontname +
-                            '", "400", "normal");\r\n',
+                                fontname +
+                                '", "' +
+                                fontname +
+                                '", "400", "normal");\r\n',
                             cb
                         );
                     }
