@@ -27,12 +27,14 @@ $md4: 479.98;
 
 $mainColor: #3a3a3a;
 $orangeColor: #e89f71;
-$greyColor: #898989;
-$darkgreyColor: #616161;
-//______________________________________________________________________________
+$grayColor: #898989;
+$darkGrayColor: #616161;
 
+@import "mixins";
+//______________________________________________________________________________
 body {
     color: $mainColor;
+    background: #f9f1e7;
     font-family: $fontFamily;
     font-size: $fontSize + px;
     &._lock {
